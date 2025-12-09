@@ -58,19 +58,35 @@
       margin-bottom: 10px;
     }
 
+    /* 🔥 Animated Buy Button */
     .buy-button {
       background: #dca4ff;
       border: none;
       padding: 12px 25px;
       font-size: 1rem;
       color: white;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      transition: 0.2s ease;
+      transition: 0.25s ease;
+      box-shadow: 0 0 10px rgba(220, 164, 255, 0.4);
     }
 
     .buy-button:hover {
       background: #c67bff;
+      transform: scale(1.07);
+      box-shadow: 0 0 15px rgba(198, 123, 255, 0.7);
+    }
+
+    /* ✨ Fancy glowing price tag */
+    .price-tag {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #4a4a4a;
+      background: #ffeefe;
+      padding: 8px 18px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(255, 202, 255, 0.6);
+      border: 1px solid #f7caff;
     }
 
     footer {
@@ -85,7 +101,7 @@
 <body>
   <header>
     <h1>TABLE TALES</h1>
-    <p>Bring connection to the dinner table.</p>
+    <p>Bring connectioN to the dinner table.</p>
   </header>
 
   <section class="hero">
@@ -98,18 +114,20 @@
       <h2>Prototype Preview</h2>
       <div class="image-placeholder">Insert prototype photo here</div>
 
-      <!-- BUY BUTTON + PRICE -->
-      <div class="buy-row" style="
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           gap: 15px;
-           margin-bottom: 15px;
+      <!-- ⭐ BUY BUTTON + PRICE ⭐ -->
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 15px;
       ">
-        <button class="buy-button">Buy Now</button>
-        <span style="font-size: 1.2rem; font-weight: bold; color: #333;">
-          $25
-        </span>
+        <!-- 🔗 Button links to "checkout.html" (change the URL as needed!) -->
+        <a href="checkout.html" style="text-decoration: none;">
+          <button class="buy-button">Buy Now</button>
+        </a>
+
+        <span class="price-tag">$25</span>
       </div>
 
       <p>This is where your card-holder prototype image will display. Replace the gray box with a real photo when ready.</p>
